@@ -1,0 +1,28 @@
+* get_cm.inp
+*
+
+!stream dcd_header@o.str ! done in action_*.sh
+stream @{rstrm}
+
+prnlev 2 node 0
+
+traj firstu 51 nunit @{ndcd}
+prnlev 2 node 0
+set cnt 1
+label L1 
+traj read 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+set frm @{cnt}
+set q @frm ! to print out frame number
+
+coor stat sele a0 end
+  set x0 ?xave
+  set y0 ?yave
+  set z0 ?zave
+
+incr cnt by 1
+if @{cnt} .le. @{ntot} goto L1
+
+
+stop

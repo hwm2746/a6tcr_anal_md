@@ -1,0 +1,30 @@
+* cdr3.inp 
+*
+stream ../../include.str
+stream dcd_header.str
+
+ioform exte
+read psf card name @{ipsf}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! MODIFIABLE SECTION
+
+! cdr3{a,b}
+defi cdr3a sele segi E000 .and (resi 92 .or. resi 97) .and. type CA end 
+defi cdr3b  sele segi E001 .and. (resi 94 .or. resi 103) .and. type CA end 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+traj nocheck firstu 51 nunit @{ndcd}
+prnlev 2 node 0
+set j 1
+label L1
+traj read 
+
+coor axis sele cdr3a end sele cdr3b end
+set dr ?raxi
+
+incr j by 1 
+if @j .le. @{ntot} goto L1
+
+stop

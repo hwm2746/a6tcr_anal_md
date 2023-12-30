@@ -1,0 +1,10 @@
+# Rank  9 singular_val=  0.789E+00
+mol new
+graphics top color       cyan2
+draw arrow {    2.74 -11.34  25.40 } {    7.83  -2.39  11.08 }
+draw arrow {   13.97  12.63   5.87 } {   15.25   5.65  10.32 }
+draw arrow {    1.31   2.90   5.07 } {  -12.75   6.74   3.84 }
+draw arrow {    8.60  18.25 -35.43 } {   13.79  11.36 -24.98 }
+draw arrow {   20.62  -2.65 -18.90 } {   25.66   3.60 -21.57 }
+draw arrow {    5.35  -3.36 -23.53 } {   -0.79  -1.71 -20.53 }
+mol rename top pca09

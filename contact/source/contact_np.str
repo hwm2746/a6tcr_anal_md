@@ -1,0 +1,28 @@
+! contact_np.inp: get nonpolar contacts
+!
+
+set r0 3.0 ! cutoff distance for contact analysis: 
+
+set ntot 0
+set i 51
+set j @{idcd}
+label L0
+traj query unit @i
+calc ntot @{ntot} + ?nfile
+incr i by 1
+incr j by 1
+if @j .le. @{fdcd} goto L0
+
+traj nocheck firstu 51 nunit @{ndcd}
+!prnlev 2 node 0
+set j 1 
+label L1 
+traj read 
+
+  coor dist resi cut @{r0} sele t0 end sele t1 end 
+
+  incr j by 1
+if @j .le. @{ntot} goto L1
+close unit 51
+
+stop

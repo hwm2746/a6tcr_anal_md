@@ -1,0 +1,12 @@
+ndata 8
+../data/WThigh/data_ma/hb_ma.dat
+../data/WThigh/data_ma/np_ma.dat
+../data/WThigh/data_mb/hb_mb.dat
+../data/WThigh/data_mb/np_mb.dat
+../data/WThigh/data_pa/hb_pa.dat
+../data/WThigh/data_pa/np_pa.dat
+../data/WThigh/data_pb/hb_pb.dat
+../data/WThigh/data_pb/np_pb.dat
+ofname ./out/hamming_WThigh.dat
+ocut 0.8
+occ_frm 2500

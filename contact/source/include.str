@@ -1,0 +1,13 @@
+* include.str
+*
+set M 1ao7
+
+set mach inron
+
+if @{mach} .eq. inron set chm_dir /usr/local/charmm/c47a11/
+
+read rtf card name @{chm_dir}toppar/top_all36_prot.rtf
+read para card flex name @{chm_dir}toppar/par_all36_prot.prm
+
+stream @{chm_dir}toppar/toppar_water_ions.str ! water & ions
+

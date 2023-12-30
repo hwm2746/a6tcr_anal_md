@@ -1,0 +1,10 @@
+# Rank  4 singular_val=  0.164E+03
+mol new
+graphics top color       cyan2
+draw arrow {   41.95  -2.87   3.57 } {   42.09  -2.36   3.64 }
+draw arrow {   49.68 -15.48  11.09 } {   29.82 -21.24  10.73 }
+draw arrow {    8.86  -7.02   0.68 } {    5.16   1.07   7.15 }
+draw arrow {   39.57  -6.91 -10.44 } {   39.43  -7.42 -10.51 }
+draw arrow {   36.43  24.13 -13.03 } {   27.39  16.77 -24.26 }
+draw arrow {   14.58  11.41 -16.60 } {    7.35   5.37 -16.80 }
+mol rename top pca_cm04

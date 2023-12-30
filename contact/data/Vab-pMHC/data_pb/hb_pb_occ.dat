@@ -1,0 +1,11 @@
+# input filename: out_temp_hbpb.dat
+# dt(ns)=  0.02   npad=     40   lcut=  0.05   hcut=   0.5
+# npad<0: no local occ traj, [lh]cut<0.: no transition calculated.
+# number of frames read: 51010 1.02e+03ns
+# frame range for analysis:       0  51010
+# number of bonds: 3
+# ind: index, bnum: bond number
+# Bond type and occupancy (ordered w/ occupancy): 
+   1  C000 TYR 0008 E001 LEU 0097  0.90304
+   2  C000 TYR 0008 E001 GLU 0030  0.84723
+   0  C000 TYR 0005 E001 ARG 0094  0.55168

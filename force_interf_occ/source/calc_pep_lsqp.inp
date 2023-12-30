@@ -1,0 +1,41 @@
+* pep_lsqp.inp : get least squared fit plane of peptide Ca atoms
+*
+
+bomlev -1 
+stream ../../../include.str
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! MODIFIABLE SECTION 
+
+set ext 12
+
+read psf card name @M@{ext}_bb.psf
+set ifn ./dcd/temp_vab_@M@{ext}.dcd ! input file
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+set j 1
+
+open read unit 51 file name @{ifn}
+
+!read frame 0 and frame last 
+read coor file unit 51 ifil 0
+set ntot ?nfile
+
+traj nocheck firstu 51 nunit 1 
+prnlev 2 node 0
+label L1
+traj read
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+defi rcont sele segi C000 .and. type CA end 
+coor lsqp sele rcont end
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+incr j by 1 
+if j .le. @ntot goto L1
+
+
+close unit 51
+
+stop

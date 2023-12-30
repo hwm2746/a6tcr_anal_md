@@ -1,0 +1,24 @@
+* gen_bb.inp: generate backbone-only psf
+*
+
+bomlev -1 ! allow non-integer total charge
+stream include.str
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! MODIFIABLE SECTION 
+
+set ext 12
+set icor ../../../run1/@{ext}/dcd_nowat/@Mi@{ext}_0_nowat.cor
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+set ipsf ../../../run1/@{ext}/dcd_nowat/@Mi@{ext}_nowat.psf
+
+read psf card name @{ipsf}
+dele atom sele .not. (type CA .or. type C .or. type N .or. type O .or. type HN) end
+
+writ psf card name @M@{ext}_bb.psf
+* @M backbone only
+*
+
+stop

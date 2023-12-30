@@ -1,0 +1,8 @@
+* bresi_va0.str : selection of atoms for building triad for valpha
+*
+
+defi a0 sele segi E000 .and. ( resi 19:24 .or. resi 70:75) .and. type CA end
+
+defi b0 sele segi E000 .and. (resi 24 .or. resi 70 ) .and. type CA end
+defi c0 sele segi E000 .and. (resi 19 .or. resi 75 ) .and. type CA end
+

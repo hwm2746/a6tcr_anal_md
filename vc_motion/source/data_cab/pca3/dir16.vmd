@@ -1,0 +1,10 @@
+# Rank 16 singular_val=  0.257E+00
+mol new
+graphics top color        blue
+draw arrow {    6.55 -10.04  12.78 } {    4.02  -3.69  23.69 }
+draw arrow {   21.45  13.21   6.37 } {    7.77   5.07   9.82 }
+draw arrow {   -6.58   2.07   0.51 } {   -4.86   7.56   8.40 }
+draw arrow {    9.12  12.61 -35.86 } {   13.27  17.00 -24.54 }
+draw arrow {   21.26   4.73 -19.17 } {   25.02  -3.77 -21.30 }
+draw arrow {    0.65   1.18 -25.65 } {    3.91  -6.25 -18.41 }
+mol rename top pca16

@@ -1,0 +1,5 @@
+* bresi_ha.str : selection of atoms for hinge of TCRa
+*
+
+defi a0 sele segi E000 .and. resi 114 .and. type CA end
+

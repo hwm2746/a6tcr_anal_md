@@ -1,0 +1,5 @@
+* bresi_hb.str : selection of atoms for hinge of TCRb
+*
+
+defi a0 sele segi E001 .and. (resi 117 .or. resi 118) .and. type CA end
+

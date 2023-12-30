@@ -1,0 +1,10 @@
+# Rank 17 singular_val=  0.985E-05
+mol new
+graphics top color         red
+draw arrow {   42.01  -2.57  14.21 } {   42.02  -2.66  -7.00 }
+draw arrow {   39.75 -18.36  10.91 } {   39.75 -18.36  10.91 }
+draw arrow {    7.01  -2.98   3.91 } {    7.01  -2.98   3.91 }
+draw arrow {   39.50  -7.12   0.14 } {   39.50  -7.21 -21.08 }
+draw arrow {   31.91  20.45 -18.64 } {   31.91  20.45 -18.64 }
+draw arrow {   10.96   8.39 -16.70 } {   10.96   8.39 -16.70 }
+mol rename top pca_cm17

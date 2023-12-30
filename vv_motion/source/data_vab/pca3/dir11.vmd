@@ -1,0 +1,10 @@
+# Rank 11 singular_val=  0.173E+00
+mol new
+graphics top color        blue
+draw arrow {    4.16 -11.82  15.96 } {    4.14  -9.59  17.67 }
+draw arrow {   22.60   4.38   8.01 } {    4.20   8.48   9.05 }
+draw arrow {   -9.03  -6.39  -0.55 } {   -4.16   9.74   7.37 }
+draw arrow {   13.69  16.00 -31.38 } {    9.98  14.15 -27.48 }
+draw arrow {   22.41   2.53 -20.66 } {   25.19  -1.79 -19.28 }
+draw arrow {   -0.18  -7.46 -24.93 } {    6.50   1.01 -21.45 }
+mol rename top pca11

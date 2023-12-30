@@ -1,0 +1,10 @@
+# Rank 12 singular_val=  0.375E+02
+mol new
+graphics top color         red
+draw arrow {   41.79  -2.62   3.32 } {   42.24  -2.61   3.89 }
+draw arrow {   40.07 -18.49  10.85 } {   39.43 -18.22  10.97 }
+draw arrow {    7.34   0.02  -3.13 } {    6.67  -5.97  10.96 }
+draw arrow {   39.73  -7.16 -10.19 } {   39.28  -7.17 -10.75 }
+draw arrow {   35.93  24.33 -21.28 } {   27.89  16.57 -16.01 }
+draw arrow {    6.81   2.52  -7.98 } {   15.11  14.26 -25.43 }
+mol rename top pca_cm12

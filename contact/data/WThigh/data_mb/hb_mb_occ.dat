@@ -1,0 +1,25 @@
+# input filename: out_temp_hbmb.dat
+# dt(ns)=  0.02   npad=     40   lcut=  0.05   hcut=   0.5
+# npad<0: no local occ traj, [lh]cut<0.: no transition calculated.
+# number of frames read: 62510 1.25e+03ns
+# frame range for analysis:       0  62510
+# number of bonds: 17
+# ind: index, bnum: bond number
+# Bond type and occupancy (ordered w/ occupancy): 
+   2  MHC0 ALA 0150 E001 ARG 0101  0.11365
+   7  MHC0 ARG 0065 E001 ASP 0056  0.05329
+   1  MHC0 HSD 0151 E001 ARG 0101  0.01781
+   3  MHC0 GLN 0155 E001 GLY 0100  0.01717
+   0  MHC0 ALA 0149 E001 ARG 0101  0.00915
+   4  MHC0 GLN 0072 E001 GLU 0030  0.00462
+  13  MHC0 LYS 0068 E001 ILE 0054  0.00344
+   6  MHC0 GLN 0155 E001 ARG 0101  0.00283
+  10  MHC0 ALA 0150 E001 GLY 0100  0.00250
+  15  MHC0 LYS 0068 E001 ALA 0052  0.00109
+  14  MHC0 LYS 0068 E001 GLY 0053  0.00096
+  16  MHC0 GLN 0072 E001 ALA 0052  0.00010
+  11  MHC0 HSD 0151 E001 GLY 0100  0.00010
+   8  MHC0 LYS 0068 E001 ASP 0056  0.00008
+   5  MHC0 ARG 0065 E001 TYR 0048  0.00008
+  12  MHC0 GLU 0154 E001 ARG 0101  0.00003
+   9  MHC0 LYS 0146 E001 ALA 0098  0.00002

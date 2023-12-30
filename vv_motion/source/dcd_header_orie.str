@@ -1,0 +1,20 @@
+* dcd_header_orie.str: location of oriented dcd files 
+*
+
+bomlev -1 !suppress total charge not integer error
+stream ../../../include.str
+
+set ext 12
+
+set dcd_dir ../orie/dcd
+set ipsf ../orie/@M@{ext}_bb.psf
+
+ioform exte
+read psf card name @{ipsf}
+stream ../../../domain_@M.str
+
+open read unit 51 file name @{dcd_dir}/temp_@{dname}_@M@{ext}.dcd
+traj query unit 51
+calc ntot ?nfile
+
+set ndcd 1

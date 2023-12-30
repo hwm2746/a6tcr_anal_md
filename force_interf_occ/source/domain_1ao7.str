@@ -1,0 +1,64 @@
+* domain_def.str (A6 TCR, WT) 
+*
+
+define backbone sele (type CA .or. type C .or. type N ) end
+define protseg sele (segi MHC* .or. segi C000 .or. segi E00*) end
+define sc sele protseg .and. .not. (backbone .or. type H*) end
+define xtlw sele (segi HOH* .and. type OH2) end ! crystal water
+
+!! added C-term strands
+define stalk sele (segi E000 .and. resid 201:218) .or. -
+       (segi E001 .and. resid 246:260) end
+define mhc_end sele (segi MHC0 .and. resid 275:284) end
+
+!! restrained TCR atoms at C-term
+define hold_atom sele ((segi E000 .and. resi 218) .or. -
+       (segi E001 .and. resi 260)) .and. type CA end
+
+!! pulled atoms
+define pull_atom sele segi MHC0 .and. resid 284 .and. type CA end
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! for a6 tcr
+define tcra sele (segi E000) end
+define tcrb sele (segi E001) end
+define mhc0 sele segi MHC0 end
+define mhc0a sele segi MHC0 .and. resid 1:181 end
+define mhc0a21 sele segi MHC0 .and. resid 140:150 end !mhc0 alpha2 helix, sec 1
+define mhc0b sele segi MHC0 .and. resid 182:274 end 
+define b2m sele segi MHC1 end
+define peptide sele (segi C000) end 
+
+!! c* domain end aa one after CYS 
+define Valpha sele (segi E000 .and. resi 1:111) end
+define Calpha sele (segi E000 .and. resi 112:206) end 
+define Vbeta sele  (segi E001 .and. resi 1:116) end
+define Cbeta sele  (segi E001 .and. resi 117:247) end 
+define fg_loop sele (segi E001 .and. resi 217:232) end 
+
+!! cdr
+define cdr1a sele (segi E000 .and. resi 25:30) end
+define cdr2a sele (segi E000 .and. resi 50:52) end
+define cdr3a sele (segi E000 .and. resi 92:98) end
+
+define cdr1b sele (segi E001 .and. resi 26:30) end
+define cdr2b sele (segi E001 .and. resi 50:55) end
+define cdr3b sele (segi E001 .and. resi 94:103) end
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! FG loop sequence: LSENDEWTQDRKPVT
+! fg_loop range from rangarajan18 --> 216-231
+! cdr3a,3b range from scott11 Fig2 (labeled in "original" numbering) and
+!  verified w/ reiser02 note of "11 residues in A6 cdr3b 
+! cdr1,2 range from rangarajan plots and adjusted with rcsb structure
+! cbeta resids implicated in CD3 docking: alphaA (~aa130-138) and alphaB (195-202) 
+
+!! Calpha ab loop : (I think) resids 124-129
+
+!! ---for cdr3 viewing
+!chain E and resid 26 to 30
+!chain E and resid 52 to 54
+!chain E and resid 95 to 105
+!chain D and resid 26 to 30
+!chain D and resid 50 to 52
+!chain D and resid 97 to 103

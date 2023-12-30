@@ -1,0 +1,10 @@
+# Rank 13 singular_val=  0.400E+00
+mol new
+graphics top color      orange
+draw arrow {    9.17  -3.40  23.68 } {    1.40 -10.33  12.80 }
+draw arrow {   19.35   3.63  13.69 } {    9.87  14.65   2.50 }
+draw arrow {   -7.70  -1.14   1.23 } {   -3.75  10.77   7.68 }
+draw arrow {   12.14  17.09 -31.84 } {   10.26  12.52 -28.57 }
+draw arrow {   18.77   1.62 -19.75 } {   27.51  -0.66 -20.73 }
+draw arrow {    3.68  -3.78 -20.83 } {    0.88  -1.29 -23.23 }
+mol rename top pca13

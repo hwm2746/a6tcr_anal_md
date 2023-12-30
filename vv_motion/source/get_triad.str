@@ -1,0 +1,46 @@
+* get_triad.inp
+*
+! stream dcd_header@o.str ! done in action_*.sh
+
+stream @{rstrm}
+
+prnlev 2 node 0
+
+traj firstu 51 nunit @{ndcd}
+prnlev 2 node 0
+set cnt 1
+label L1 
+traj read 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+set frm @{cnt}
+set q @frm ! to print out frame number
+
+coor lsqp major sele a0 end
+  set x0 ?xaxi
+  set y0 ?yaxi
+  set z0 ?zaxi
+  
+  coor axis sele c0 end sele b0 end ! points to interface w/ MHC
+  set x9 ?xaxi
+  set y9 ?yaxi
+  set z9 ?zaxi
+  calc dp @{x0}*@{x9}+@{y0}*@{y9}+@{z0}*@{z9}
+  set np0 1.0
+  if @{dp} .lt. 0 set np0 -1.0
+  
+  ! direction: towards MHC
+  calc xd @{np0}*@{x0}
+  calc yd @{np0}*@{y0}
+  calc zd @{np0}*@{z0}
+  
+  ! center
+  set xc ?xcen
+  set yc ?ycen
+  set zc ?zcen
+
+incr cnt by 1
+if @{cnt} .le. @{ntot} goto L1
+
+
+stop

@@ -1,0 +1,10 @@
+# input filename: out_temp_nppb.dat
+# dt(ns)=  0.02   npad=     40   lcut=  0.05   hcut=   0.5
+# npad<0: no local occ traj, [lh]cut<0.: no transition calculated.
+# number of frames read: 62510 1.25e+03ns
+# frame range for analysis:       0  62510
+# number of bonds: 13
+# occ,std(occ): occupancy and std while the bond is formed 
+
+# Formed bonds:
+# bnum                            t(frame)    t(ns)  occ    std(occ))

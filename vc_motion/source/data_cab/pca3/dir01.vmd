@@ -1,0 +1,10 @@
+# Rank  1 singular_val=  0.308E+02
+mol new
+graphics top color        blue
+draw arrow {    1.54  -9.97  16.93 } {    9.03  -3.76  19.55 }
+draw arrow {    7.85  11.79  13.01 } {   21.37   6.49   3.17 }
+draw arrow {   -9.39  -0.74   1.01 } {   -2.06  10.37   7.89 }
+draw arrow {   12.45  16.99 -29.16 } {    9.95  12.61 -31.25 }
+draw arrow {   26.11   4.40 -18.85 } {   20.17  -3.44 -21.63 }
+draw arrow {    6.46  -4.12 -25.64 } {   -1.90  -0.95 -18.42 }
+mol rename top pca01

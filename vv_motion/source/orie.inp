@@ -1,0 +1,38 @@
+* orie.inp: Orient file to a reference coordinate frame (rcor) 
+*
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! MODIFIABLE SECTION 
+
+stream dcd_header.str
+
+set rcor "WThigh_0_nowat.cor
+
+set dname (bresiva .or. bresivb) 
+set ofn temp_vab_@M ! output file prefix
+
+!!! 
+! BRESI SELECTION 
+
+defi bresiva sele segi E000 .and. (resid 19:24 .or. resid 70:75 -
+     .or. resid 86:91 .or. resid 32:37) end
+defi bresivb sele segi E001 .and. (resid 20:25 .or. resid 74:79 -
+     .or. resid 88:93 .or. resid 33:38) end
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+define ratom sele (@{dname} .and. type CA) end
+read coor card resi comp name @{rcor} sele ratom end	
+
+calc skip0 ?skip * 100 ! save every 20 frames
+open unit 11 file name ./dcd/@{ofn}.dcd
+
+!bb 
+merge nocheck first 51 nunit @{ndcd} output 11 sele (type CA .or. type C .or. -
+   type N .or. type O .or. type HN) end -
+  orie sele ratom end !skip @{skip0}
+
+close unit 51
+
+stop
+

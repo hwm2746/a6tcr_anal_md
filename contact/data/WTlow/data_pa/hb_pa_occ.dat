@@ -1,0 +1,18 @@
+# input filename: out_temp_hbpa.dat
+# dt(ns)=  0.02   npad=     40   lcut=  0.05   hcut=   0.5
+# npad<0: no local occ traj, [lh]cut<0.: no transition calculated.
+# number of frames read: 67510 1.35e+03ns
+# frame range for analysis:       0  67510
+# number of bonds: 10
+# ind: index, bnum: bond number
+# Bond type and occupancy (ordered w/ occupancy): 
+   3  C000 TYR 0005 E000 SER 0031  0.73623
+   0  C000 GLY 0004 E000 SER 0094  0.42899
+   2  C000 TYR 0005 E000 GLN 0030  0.13253
+   4  C000 LEU 0002 E000 GLN 0030  0.02641
+   5  C000 GLY 0004 E000 GLN 0030  0.01314
+   1  C000 TYR 0005 E000 THR 0092  0.00821
+   8  C000 TYR 0005 E000 ASP 0093  0.00007
+   9  C000 TYR 0005 E000 TYR 0050  0.00006
+   6  C000 TYR 0005 E000 THR 0091  0.00006
+   7  C000 PRO 0006 E000 SER 0094  0.00003

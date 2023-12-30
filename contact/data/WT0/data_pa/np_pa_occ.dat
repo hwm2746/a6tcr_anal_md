@@ -1,0 +1,23 @@
+# input filename: out_temp_nppa.dat
+# dt(ns)=  0.02   npad=     40   lcut=  0.05   hcut=   0.5
+# npad<0: no local occ traj, [lh]cut<0.: no transition calculated.
+# number of frames read: 58510 1.17e+03ns
+# frame range for analysis:       0  58510
+# number of bonds: 15
+# ind: index, bnum: bond number
+# Bond type and occupancy (ordered w/ occupancy): 
+   1  C000 TYR 0005 E000 SER 0094  0.96418
+   0  C000 GLY 0004 E000 ASP 0093  0.95567
+   2  C000 TYR 0005 E000 ASP 0093  0.43856
+   3  C000 LEU 0001 E000 GLY 0028  0.36175
+   5  C000 TYR 0005 E000 GLN 0030  0.22169
+   6  C000 PRO 0006 E000 SER 0094  0.19747
+   9  C000 TYR 0005 E000 THR 0091  0.17212
+   7  C000 GLY 0004 E000 GLN 0030  0.04459
+   4  C000 LEU 0001 E000 GLN 0030  0.02745
+  10  C000 TYR 0005 E000 SER 0031  0.00491
+   8  C000 TYR 0005 E000 TYR 0050  0.00113
+  13  C000 TYR 0005 E000 THR 0092  0.00046
+  11  C000 GLY 0004 E000 SER 0094  0.00012
+  12  C000 PHE 0003 E000 GLN 0030  0.00003
+  14  C000 GLY 0004 E000 THR 0092  0.00002

@@ -1,0 +1,10 @@
+# Rank  8 singular_val=  0.330E+00
+mol new
+graphics top color      orange
+draw arrow {    0.99 -11.17  19.50 } {    7.32 -10.24  14.12 }
+draw arrow {   15.02   7.78   8.32 } {   11.79   5.09   8.73 }
+draw arrow {   -5.84  -0.52   5.67 } {   -7.36   3.88   1.15 }
+draw arrow {   12.21  10.94 -20.32 } {   11.45  19.21 -38.53 }
+draw arrow {   18.52   6.33 -17.10 } {   29.08  -5.60 -22.84 }
+draw arrow {    2.18  -0.38 -19.79 } {    4.14  -6.07 -26.59 }
+mol rename top pca08

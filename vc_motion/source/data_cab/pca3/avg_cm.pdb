@@ -1,0 +1,8 @@
+MODEL
+ATOM      1  Z    CM A   1      42.018  -2.615   3.604  1.00  0.50      TCRA
+ATOM      2  Z    CM A   2      39.751 -18.357  10.910  1.00  0.50      TCRA
+ATOM      3  Z    CM A   3       7.007  -2.979   3.914  1.00  0.50      TCRA
+ATOM      4  Z    CM B   1      39.501  -7.164 -10.471  1.00  0.50      TCRB
+ATOM      5  Z    CM B   2      31.910  20.452 -18.642  1.00  0.50      TCRB
+ATOM      6  Z    CM B   3      10.963   8.391 -16.701  1.00  0.50      TCRB
+ENDMDL

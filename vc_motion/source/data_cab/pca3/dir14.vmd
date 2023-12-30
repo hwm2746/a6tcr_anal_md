@@ -1,0 +1,10 @@
+# Rank 14 singular_val=  0.321E+00
+mol new
+graphics top color       cyan2
+draw arrow {    5.60  -8.10  17.49 } {    4.97  -5.63  18.99 }
+draw arrow {   17.67   9.04   7.30 } {   11.54   9.24   8.89 }
+draw arrow {   -6.34   2.49   2.83 } {   -5.10   7.14   6.08 }
+draw arrow {   14.28  14.41 -31.48 } {    8.12  15.20 -28.93 }
+draw arrow {   29.40  -4.61 -25.91 } {   16.87   5.57 -14.56 }
+draw arrow {    9.53   2.79 -18.19 } {   -4.97  -7.86 -25.87 }
+mol rename top pca14

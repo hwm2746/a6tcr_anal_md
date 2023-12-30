@@ -1,0 +1,9 @@
+ifname out_temp_nppb.dat
+# for get_bond.cpp
+btype nonpolar
+npad 40 # number of frames for initial/final padding
+lcut 0.05 #  cutoff occupancy for no bond
+hcut 0.5 #  cutoff occupancy for bond
+dt 0.02 # coord saving frequency in ns.
+segname C000
+ofname np_pb 

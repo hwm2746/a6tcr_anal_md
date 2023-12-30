@@ -1,0 +1,10 @@
+# Rank 15 singular_val=  0.288E+00
+mol new
+graphics top color       ochre
+draw arrow {    5.65  -9.31  15.18 } {    4.92  -4.42  21.30 }
+draw arrow {   19.77  11.61   6.59 } {    9.45   6.67   9.60 }
+draw arrow {   -3.14   0.22   1.75 } {   -8.31   9.41   7.16 }
+draw arrow {   10.81  17.64 -22.62 } {   11.58  11.97 -37.79 }
+draw arrow {   24.83  -3.52 -18.13 } {   21.45   4.47 -22.34 }
+draw arrow {    0.12  -9.02 -20.07 } {    4.44   3.94 -23.99 }
+mol rename top pca15

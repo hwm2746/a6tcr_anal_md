@@ -1,0 +1,5 @@
+* bresi_ca.str : selection of atoms for building BOC of Calpha
+*
+
+defi a0 sele segi E000 .and. ( resi 132:137 .or. resi 171:176 .or. -
+   resi 153:158 .or. resi 118:123 ) .and. type CA end

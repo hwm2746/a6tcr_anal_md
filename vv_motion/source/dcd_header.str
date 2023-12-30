@@ -1,0 +1,48 @@
+* dcd_header.str
+*
+
+stream include.str
+
+!!!!!!!!!!!!
+! editable block
+
+set idcd 1
+set fdcd 22
+
+set ext 12 ! pulling extension
+
+set dcd_dir ../../../run1/@{ext}/dcd_nowat
+set dcdn @Mi ! dcd name prefix
+set ipsf @{dcd_dir}/@{dcdn}@{ext}_nowat.psf
+set icor @{dcd_dir}/@{dcdn}@{ext}_0_nowat.cor
+
+!!!!!!!!!!!!
+
+calc ndcd @{fdcd}-@{idcd}+1
+
+ioform exte
+read psf card name @{ipsf}
+read coor comp card resi name @{icor}
+stream ../../../domain_@M.str
+
+set i @{idcd}
+set j 51
+label IL0
+
+open read unit @j file name @{dcd_dir}/@{dcdn}@{ext}_@{i}_nowat.dcd
+incr i by 1
+incr j by 1
+if @i .le. @{fdcd} goto IL0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+set ntot 0
+set i 51
+set j @{idcd}
+label L0
+traj query unit @i
+calc ntot @{ntot} + ?nfile
+incr i by 1
+incr j by 1
+if @j .le. @{fdcd} goto L0
+

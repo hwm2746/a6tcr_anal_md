@@ -1,0 +1,12 @@
+ndata 8
+../data/WTlow/data_ma/hb_ma.dat
+../data/WTlow/data_ma/np_ma.dat
+../data/WTlow/data_mb/hb_mb.dat
+../data/WTlow/data_mb/np_mb.dat
+../data/WTlow/data_pa/hb_pa.dat
+../data/WTlow/data_pa/np_pa.dat
+../data/WTlow/data_pb/hb_pb.dat
+../data/WTlow/data_pb/np_pb.dat
+ofname ./out/hamming_WTlow.dat
+ocut 0.8
+occ_frm 2500

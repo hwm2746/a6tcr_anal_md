@@ -1,0 +1,5 @@
+* bresi_cb.str : selection of atoms for building BOC of Cbeta
+*
+
+defi a0 sele segi E001 .and. (resid 143:148 .or. resid 209:214 -
+     .or. resid 192:197 .or. resid 158:163) .and. type CA end

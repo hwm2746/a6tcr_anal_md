@@ -1,0 +1,7 @@
+* bresi_vb1.str : selection of atoms for building triad for vbeta
+*
+
+defi a0 sele segi E001 .and. ( resi 88:93 .or. resi 33:38 ) .and. type CA end
+defi b0 sele segi E001 .and. (resi 93 .or. resi 33 ) .and. type CA end
+defi c0 sele segi E001 .and. (resi 88 .or. resi 38 ) .and. type CA end
+

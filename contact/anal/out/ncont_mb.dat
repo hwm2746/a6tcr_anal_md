@@ -1,0 +1,6 @@
+# iframe= 25000 npad=  40 ocut= 0.8, ocut1= 0.5
+# mol      avg     std    nfrm
+WT0         3.535 0.783  58510
+WTlow       3.417 0.693  67510
+WThigh      2.948 0.960  62510
+Vab-pMHC    3.329 0.907  51010

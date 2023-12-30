@@ -1,0 +1,8 @@
+* created by anal_contact.sh
+*
+set s 
+stream ../input0.str
+define t0 sele peptide .and. (property abs CHARGE .lt. 0.30) end
+define t1 sele Vbeta .and. (property abs CHARGE .lt. 0.30) end
+
+stream ../contact_np.str

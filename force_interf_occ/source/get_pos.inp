@@ -1,0 +1,41 @@
+* get_pos.inp: Find positions of cons harm atoms.
+*
+
+stream include.str
+stream dcd_header.str
+stream domain_@M.str
+
+ioform extended
+read psf card name @{ipsf}
+
+traj nocheck firstu 51 nunit @{ndcd}
+prnlev 2 node 0
+set cnt 1
+label L1 
+traj read
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!! MODIFIABLE SECTION. This is based on OpenMM translation params.
+
+! translation vector from dyn_cont.py 
+set dx 109.0
+set dy 48.5
+set dz 43.627776
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+set frm @{cnt}
+set q @frm ! to print out frame number
+    
+coor stat sele hold_atom end
+  calc x0 (?xave - @{dx})
+  calc y0 (?yave - @{dy})
+  calc z0 (?zave - @{dz})
+  coor stat sele pull_atom end
+  calc x1 (?xave - @{dx})
+  calc y1 (?yave - @{dy})
+  calc z1 (?zave - @{dz})
+
+incr cnt by 1
+if @{cnt} .le. @{ntot} goto L1
+
+stop
