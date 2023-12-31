@@ -1,6 +1,8 @@
 ## Sample analysis scripts for molecular dynamics simulations of A6 T-cell receptor
 
-*Primary reference:*
+Authors: Ana C. Chang-Gonzalez & Wonmuk Hwang ( hwm@tamu.edu ). see LICENSE.
+
+**Primary reference:**
 Ana C. Chang-Gonzalez, Robert J. Mallis, Matthew J. Lang, Ellis L. Reinherz, and Wonmuk Hwang
 **Asymmetric framework motion of TCR&#x03B1;&#x03B2; controls load-dependent peptide discrimination**
 *eLife* (2024).
