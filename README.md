@@ -5,7 +5,7 @@ Authors: Ana C. Chang-Gonzalez & Wonmuk Hwang ( hwm@tamu.edu ). see LICENSE.
 **Primary reference:**
 Ana C. Chang-Gonzalez, Robert J. Mallis, Matthew J. Lang, Ellis L. Reinherz, and Wonmuk Hwang
 **Asymmetric framework motion of TCR&#x03B1;&#x03B2; controls load-dependent peptide discrimination**
-*eLife* (2024).
+*eLife* **13**:e91881 (2024). https://doi.org/10.7554/eLife.91881
 
 * This README.md contains general notes. See the README.md file in each folder for further details.
 * See our paper (the primary reference above) for figure numbers mentioned in README.md in each folder.
